@@ -49,21 +49,37 @@ interval=500
 separator=false
 separator_block_width=6
 
-[batteryIcon]
-command=echo `sh $HOME/scripts/battery`
-color=#a1a1a1
-markup=pango
-interval=5
-separator=false
-separator_block_width=2
+#[batteryIcon]
+#command= echo `sh $HOME/scripts/battery`
+#color=#a1a1a1
+#markup=pango
+#interval=5
+#separator=false
+#separator_block_width=2
 
 [battery]
 #command=echo `sh /home/mathieu/scripts/status.sh`
-command=acpi | grep -oE '[0-9]{1,2}\%'
+#command=acpi | grep -oE '[0-9]{1,2}\%'
 #command=echo -n `acpi | grep -oE "[[:digit:]]*%"` - `sh /home/mathieu/scripts/status.sh` - `perl /usr/libexec/i3blocks/battery | grep -oE "[[:digit:]]*:[[:digit:]]*"`
+command= echo `sh /home/weznon/scripts/battery.sh`
 interval=5
 separator=false
 separator_block_width=6
+
+#[separator]
+#color=#00000000
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>██</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>██</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
+
+#[batterypercent]
+#command= echo `cat /sys/class/power_supply/BAT0/capacity`
+#interval=5
+#separator=false
+#separator_block_width=6
 
 [separator]
 color=#88888800
