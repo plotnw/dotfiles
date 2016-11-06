@@ -36,7 +36,7 @@ align=right
 separator_block_width=6
 
 [Updates]
-label=⚙ : 
+label=⚙ 
 command=checkupdates | wc -l
 interval=600
 
@@ -58,6 +58,7 @@ separator_block_width=6
 #separator_block_width=2
 
 [battery]
+color=#92df53
 #command=echo `sh /home/mathieu/scripts/status.sh`
 #command=acpi | grep -oE '[0-9]{1,2}\%'
 #command=echo -n `acpi | grep -oE "[[:digit:]]*%"` - `sh /home/mathieu/scripts/status.sh` - `perl /usr/libexec/i3blocks/battery | grep -oE "[[:digit:]]*:[[:digit:]]*"`

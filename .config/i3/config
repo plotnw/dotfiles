@@ -164,17 +164,17 @@ bar{
 	#status_command i3status
 	status_command i3blocks
 	position bottom
-	font pango:terminus 8
+	font pango:Hack 8
   tray_output primary
 	height 14
   colors {
-      background #00000066 
-      statusline #ffffff66
+      background #00306d
+      statusline #ffffff88
       separator #888888ff
-      focused_workspace #00000088 #00000088 #ffffffbb
-      active_workspace #00000088 #00000088 #aaaaaabb
-      inactive_workspace #00000088 #00000088 #999999bb
-      urgent_workspace #88888888 #08080888 #EA4C59bb
+      focused_workspace  #003981 #003981 #ffffff
+      active_workspace   #003c8a #003c8a #000000
+      inactive_workspace #002350 #002350 #ffffff
+      urgent_workspace   #8cc061 #8cc061 #000000
    }
  
 }
@@ -211,7 +211,7 @@ client.background #ffffff
 client.placeholder #000000 #0c0c0c #ffffff #000000
 exec xbindkeys
 #End Executes
-exec feh  --bg-scale '/home/weznon/Pictures/papes/art_by_apofiss_dinosaur_bubbles_leaflet_drop_ultra_3840x2160_hd-wallpaper-341600.jpg' 
+exec feh  --bg-scale '/home/weznon/Pictures/papes/dino/dinoLeaf2.jpg
 exec compton -b
 exec amixer -D pulse sset Master on
 exec amixer -D pulse sset Master 40%

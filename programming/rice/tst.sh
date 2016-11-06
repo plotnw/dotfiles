@@ -1,10 +1,10 @@
 var=$( cat /sys/class/power_supply/BAT0/capacity )
 #declare -r var=40
-RED='\033[0;31m'
+echo $var
 
 
 if (( var < 10 )); then
-  print "${RED} ♡ ! ! ! ♡ "
+  echo ♡ ! ! ! ♡
 elif (( var < 20 )); then
   echo ♥ ♡ ♡ ♡ ♡
 elif (( var < 40 )); then
@@ -13,7 +13,6 @@ elif (( var < 60 )); then
   echo ♥ ♥ ♥ ♡ ♡
 elif (( var < 80 )); then
   echo ♥ ♥ ♥ ♥ ♡
-elif (( var < 101 )); then
+elif (( var < 100 )); then
   echo ♥ ♥ ♥ ♥ ♥
 fi
-
