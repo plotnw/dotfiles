@@ -13,7 +13,9 @@ elif (( var < 60 )); then
   echo ♥ ♥ ♥ ♡ ♡
 elif (( var < 80 )); then
   echo ♥ ♥ ♥ ♥ ♡
+elif (( var < 95 )); then
+  echo ♥ ♥ ♥ ♥ ♥ 
 elif (( var < 101 )); then
-  echo ♥ ♥ ♥ ♥ ♥
+  echo ♥ ♥ ♥ ♥ ❤
 fi
 
