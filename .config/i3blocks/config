@@ -26,7 +26,7 @@ separator=false
 markup=Pango
 
 [separator]
-color=#999999
+color=#99999900
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
@@ -41,7 +41,7 @@ command=checkupdates | wc -l
 interval=600
 
 [separator]
-color=#999999
+color=#99999900
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
@@ -66,7 +66,7 @@ separator=false
 separator_block_width=6
 
 [separator]
-color=#888888
+color=#88888800
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
@@ -90,7 +90,7 @@ separator_block_width=2
 interval=30
 
 [separator]
-color=#777777
+color=#77777700
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
@@ -115,7 +115,7 @@ separator_block_width=6
 signal=10
 
 [separator]
-color=#666666
+color=#66666600
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
@@ -139,7 +139,7 @@ separator=false
 separator_block_width=6
 
 [separator]
-color=#555555
+color=#55555500
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
@@ -166,7 +166,7 @@ separator=false
 separator_block_width=6
 #
 [separator]
-color=#444444
+color=#44444400
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
@@ -190,7 +190,7 @@ separator_block_width=6
 #
 
 [separator]
-color=#333333
+color=#33333300
 markup=pango
 full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
 short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
