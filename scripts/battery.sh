@@ -4,7 +4,7 @@ RED='\033[0;31m'
 
 
 if (( var < 10 )); then
-  print "${RED} ♡ ! ! ! ♡ "
+  echo ♡ ! ! ! ♡
 elif (( var < 20 )); then
   echo ♥ ♡ ♡ ♡ ♡
 elif (( var < 40 )); then

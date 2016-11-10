@@ -188,6 +188,7 @@ for_window [class="^.*"] border pixel 5
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 1%+
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 1%-
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10%
+bindsym XF86AudioPlay exec cplay
 
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -211,7 +212,7 @@ client.background #ffffff
 client.placeholder #000000 #0c0c0c #ffffff #000000
 exec xbindkeys
 #End Executes
-exec feh  --bg-scale '/home/weznon/Pictures/papes/dino/dinoLeaf2.jpg
+exec feh  --bg-scale '/home/weznon/Pictures/papes/dino/dinoLeaf2.jpg'
 exec compton -b
 exec amixer -D pulse sset Master on
 exec amixer -D pulse sset Master 40%
