@@ -35,6 +35,13 @@ separator=false
 align=right
 separator_block_width=6
 
+#[song]
+#color=#92df53
+#command=echo `sh /home/weznon/scripts/song.sh`
+#interval=5
+#separator=false
+#separator_block_width=6
+
 [Updates]
 label=⚙ 
 command=checkupdates | wc -l
