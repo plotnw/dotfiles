@@ -1,0 +1,1 @@
+/home/weznon/.config/haskell-vim-now/.vimrc
