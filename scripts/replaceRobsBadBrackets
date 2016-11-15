@@ -1,0 +1,5 @@
+takes tmp as input file, writes to temp
+writing to a new file is good, since its possible this script messes stuff up
+and you cant undo a terminal command very easily
+cat tmp | tr '\n' '%' | sed -e 's/%[ \t]*{%/ {\n/g' | tr '%' '\n' > temp
+
