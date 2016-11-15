@@ -1,5 +1,10 @@
 takes tmp as input file, writes to temp
 writing to a new file is good, since its possible this script messes stuff up
 and you cant undo a terminal command very easily
+
 cat tmp | tr '\n' '%' | sed -e 's/%[ \t]*{%/ {\n/g' | tr '%' '\n' > temp
+
+this one does the same thing, just uses a null character unstead of %. This will help to prevent things like accidentally newlining in something like "if (x % 5 == 0) {"
+Use this one over the other, but the other is there for legacy purposes
+cat test | tr '\n' '\000' | sed -e 's/\x0[ \t]*{\x0/ {\n/g' | tr '\000' '\n' > temp
 
