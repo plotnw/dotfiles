@@ -39,19 +39,19 @@ while read -r line ; do
       # disk home
       diskh="%{F${color_icon}}${sep_l_left} %{T2}${icon_home}%{F- T1} ${sys_arr[7]}%%"
       # wlan
-      if [ "${sys_arr[8]}" == "down" ]; then
-        wland_v="×"; wlanu_v="×";
-        wlan_cback=${color_sec_b2}; wlan_cicon=${color_disable}; wlan_cfore=${color_disable};
-      else
-        wland_v=${sys_arr[8]}K; wlanu_v=${sys_arr[9]}K;
-        if [ ${wland_v:0:-3} -gt ${net_alert} ] || [ ${wlanu_v:0:-3} -gt ${net_alert} ]; then
-          wlan_cback=${color_net}; wlan_cicon=${color_back}; wlan_cfore=${color_back};
-        else
-          wlan_cback=${color_sec_b2}; wlan_cicon=${color_icon}; wlan_cfore=${color_fore};
-        fi
-      fi
-      wland="%{F${wlan_cback}}${sep_left}%{F${wlan_cicon} B${wlan_cback}} %{T2}${icon_dl}%{F${wlan_cfore} T1} ${wland_v}"
-      wlanu="%{F${wlan_cicon}}${sep_l_left} %{T2}${icon_ul}%{F${wlan_cfore} T1} ${wlanu_v}"
+      #if [ "${sys_arr[8]}" == "down" ]; then
+       # wland_v="×"; wlanu_v="×";
+        #wlan_cback=${color_sec_b2}; wlan_cicon=${color_disable}; wlan_cfore=${color_disable};
+      #else
+      #  wland_v=${sys_arr[8]}K; wlanu_v=${sys_arr[9]}K;
+      #  if [ ${wland_v:0:-3} -gt ${net_alert} ] || [ ${wlanu_v:0:-3} -gt ${net_alert} ]; then
+      #    wlan_cback=${color_net}; wlan_cicon=${color_back}; wlan_cfore=${color_back};
+      #  else
+      #    wlan_cback=${color_sec_b2}; wlan_cicon=${color_icon}; wlan_cfore=${color_fore};
+      #  fi
+      #fi
+      #wland="%{F${wlan_cback}}${sep_left}%{F${wlan_cicon} B${wlan_cback}} %{T2}${icon_dl}%{F${wlan_cfore} T1} ${wland_v}"
+      #wlanu="%{F${wlan_cicon}}${sep_l_left} %{T2}${icon_ul}%{F${wlan_cfore} T1} ${wlanu_v}"
       # eth
       if [ "${sys_arr[10]}" == "down" ]; then
         ethd_v="×"; ethu_v="×";

@@ -25,15 +25,15 @@ separator_block_width=0
 separator=false
 markup=Pango
 
-[separator]
-color=#99999900
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
-interval=500
-separator=false
-align=right
-separator_block_width=6
+#[separator]
+#color=#99999900
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#align=right
+#separator_block_width=6
 
 #[song]
 #color=#92df53
@@ -44,17 +44,17 @@ separator_block_width=6
 
 [Updates]
 label=⚙ 
-command=checkupdates | wc -l
+command=echo "$(sh /home/weznon/.config/i3/scripts/updates.sh)"
 interval=600
 
-[separator]
-color=#99999900
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#99999900
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 #[batteryIcon]
 #command= echo `sh $HOME/scripts/battery`
@@ -65,11 +65,12 @@ separator_block_width=6
 #separator_block_width=2
 
 [battery]
-color=#92df53
+#color=#92df53
 #command=echo `sh /home/mathieu/scripts/status.sh`
 #command=acpi | grep -oE '[0-9]{1,2}\%'
 #command=echo -n `acpi | grep -oE "[[:digit:]]*%"` - `sh /home/mathieu/scripts/status.sh` - `perl /usr/libexec/i3blocks/battery | grep -oE "[[:digit:]]*:[[:digit:]]*"`
 command= echo `sh /home/weznon/scripts/battery.sh`
+full_text=<span font='18'>hi</span>
 interval=5
 separator=false
 separator_block_width=6
@@ -89,14 +90,14 @@ separator_block_width=6
 #separator=false
 #separator_block_width=6
 
-[separator]
-color=#88888800
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#88888800
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 [DiskIcon]
 full_text=<span font_desc='FontAwesome'> </span>
@@ -113,14 +114,14 @@ separator=false
 separator_block_width=2
 interval=30
 
-[separator]
-color=#77777700
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#77777700
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 [VolIcon]
 full_text=<span font_desc='FontAwesome'> </span>
@@ -138,14 +139,14 @@ separator=false
 separator_block_width=6
 signal=10
 
-[separator]
-color=#66666600
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#66666600
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 [TimeIcon]
 full_text=<span font_desc='FontAwesome'> </span>
@@ -162,14 +163,14 @@ interval=5
 separator=false
 separator_block_width=6
 
-[separator]
-color=#55555500
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#55555500
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 [brightnessIcon]
 full_text=<span font_desc='FontAwesome'>⇧ </span>
@@ -189,14 +190,14 @@ interval=2
 separator=false
 separator_block_width=6
 #
-[separator]
-color=#44444400
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#44444400
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 [WirelessIcon]
 full_text=<span font_desc='FontAwesome'> </span>
@@ -213,14 +214,14 @@ separator=false
 separator_block_width=6
 #
 
-[separator]
-color=#33333300
-markup=pango
-full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-interval=500
-separator=false
-separator_block_width=6
+#[separator]
+#color=#33333300
+#markup=pango
+#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+#interval=500
+#separator=false
+#separator_block_width=6
 
 [memIcon]
 full_text=<span font_desc='FontAwesome'>  </span>
@@ -232,7 +233,8 @@ separator=false
 [mem]
 markup=pango
 align=left
-command=echo `/usr/libexec/i3blocks/memory`
+command=echo "$(sh /home/weznon/.config/i3/scripts/mem.sh)"
+
 interval=10
 separator=false
 separator_block_width=6
