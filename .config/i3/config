@@ -160,11 +160,11 @@ bar{
   position bottom
 	font pango:Hack 8
   tray_output primary
-  height 14
+  height 16
   colors {
-      background #131e20
-      statusline #5588a0
-      separator #888888
+      background #131e2A00
+      statusline #ffffff00
+      separator #88888800
       focused_workspace  #003981 #003981 #ffffff
       active_workspace   #003c8a #003c8a #000000
       inactive_workspace #002350 #002350 #ffffff

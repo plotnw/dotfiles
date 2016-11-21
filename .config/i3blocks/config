@@ -25,234 +25,59 @@ separator_block_width=0
 separator=false
 markup=Pango
 
-#[separator]
-#color=#99999900
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#align=right
-#separator_block_width=6
-
-#[song]
-#color=#92df53
-#command=echo `sh /home/weznon/scripts/song.sh`
-#interval=5
-#separator=false
-#separator_block_width=6
-
-[Updates]
-label=⚙ 
-command=echo "$(sh /home/weznon/.config/i3/scripts/updates.sh)"
+[updates]
+command=echo "<span color='#29897b' bgcolor='#010000' background_alpha='1'></span>$(sh /home/weznon/.config/i3/scripts/updates.sh)"
 interval=600
-
-#[separator]
-#color=#99999900
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
-
-#[batteryIcon]
-#command= echo `sh $HOME/scripts/battery`
-#color=#a1a1a1
-#markup=pango
-#interval=5
-#separator=false
-#separator_block_width=2
+separator_block_width=0
+separator=false
 
 [battery]
-#color=#92df53
-#command=echo `sh /home/mathieu/scripts/status.sh`
-#command=acpi | grep -oE '[0-9]{1,2}\%'
-#command=echo -n `acpi | grep -oE "[[:digit:]]*%"` - `sh /home/mathieu/scripts/status.sh` - `perl /usr/libexec/i3blocks/battery | grep -oE "[[:digit:]]*:[[:digit:]]*"`
-command= echo `sh /home/weznon/scripts/battery.sh`
-full_text=<span font='18'>hi</span>
+command=echo "<span color='#0033cc' bgcolor='#29897b'></span>$(sh /home/weznon/.config/i3/scripts/battery.sh )"
 interval=5
 separator=false
-separator_block_width=6
-
-#[separator]
-#color=#00000000
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>██</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>██</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
-
-#[batterypercent]
-#command= echo `cat /sys/class/power_supply/BAT0/capacity`
-#interval=5
-#separator=false
-#separator_block_width=6
-
-#[separator]
-#color=#88888800
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
-
-[DiskIcon]
-full_text=<span font_desc='FontAwesome'> </span>
-color=#a1a1a1
-markup=pango
-interval=once
-separator=false
-separator_block_width=2
+separator_block_width=0
 
 [disk]
-command=/usr/libexec/i3blocks/disk
+command=echo "<span color='#3b5e3b' background='#0033cc'></span>$(sh /home/weznon/.config/i3/scripts/disk.sh)"
 markup=pango
 separator=false
-separator_block_width=2
+separator_block_width=0
 interval=30
 
-#[separator]
-#color=#77777700
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
-
-[VolIcon]
-full_text=<span font_desc='FontAwesome'> </span>
-color=#a1a1a1
-interval=once
-instance=
-markup=pango
-separator=false
-separator_block_width=2
-
 [volume]
-command=amixer get Master | grep -oE '\[[0-9][0-9]\%\]'
+command=echo "<span color='#6da090' background='#3b5e3b'></span>$(sh /home/weznon/.config/i3/scripts/volume.sh)"
 interval=1
 separator=false
-separator_block_width=6
-signal=10
-
-#[separator]
-#color=#66666600
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
-
-[TimeIcon]
-full_text=<span font_desc='FontAwesome'> </span>
-color=#a1a1a1
-markup=pango
-interval=once
-separator=false
-separator_block_width=2
+separator_block_width=0
 
 [time]
 markup=pango
-command=date '+%m/%d/%y  %H:%M'    
+command=echo "<span color='#4280c8' background='#6da090'></span>$(sh /home/weznon/.config/i3/scripts/time.sh)"
 interval=5
 separator=false
-separator_block_width=6
+separator_block_width=0
 
-#[separator]
-#color=#55555500
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
 
-[brightnessIcon]
-full_text=<span font_desc='FontAwesome'>⇧ </span>
-color=#a1a1a1
-interval=once
+[uptime]
 markup=pango
-separator=false
-separator_block_width=2
-# 
-[brightness]
-markup=pango
-#command=echo $(xbacklight -get) | grep -oE "[[:digit:][:digit:]]*." | tr '.' '%' 
-command=uptime -p | grep -oE '[0-9].*$'
-color=#a1a1a1
-#command=$(printf "%.0f " $(xbacklight -get))
+command=echo "<span color='#8cc061' background='#4280c8'></span>$(sh /home/weznon/.config/i3/scripts/uptime.sh)"
 interval=2
 separator=false
-separator_block_width=6
-#
-#[separator]
-#color=#44444400
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
+separator_block_width=0
 
-[WirelessIcon]
-full_text=<span font_desc='FontAwesome'> </span>
-color=#a1a1a1
-interval=once
-markup=pango
-separator=false
-separator_block_width=2
-#141 
 [Wireless]
-command=[[ -z "$(iwgetid -r)" ]] || echo "$(iwgetid -r) "
+markup=pango
+command=echo "<span color='#2e63a0' background='#8cc061'></span>$(sh /home/weznon/.config/i3/scripts/netid.sh)"
 interval=10
 separator=false
-separator_block_width=6
-#
-
-#[separator]
-#color=#33333300
-#markup=pango
-#full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
-#interval=500
-#separator=false
-#separator_block_width=6
-
-[memIcon]
-full_text=<span font_desc='FontAwesome'>  </span>
-color=#a1a1a1
-interval=once
-markup=pango
-separator=false
+separator_block_width=0
 
 [mem]
 markup=pango
 align=left
-command=echo "$(sh /home/weznon/.config/i3/scripts/mem.sh)"
-
+command=echo "<span color='#45c8b4' bgcolor='#2e63a0'></span>$(sh /home/weznon/.config/i3/scripts/mem.sh)"
 interval=10
 separator=false
-separator_block_width=6
+separator_block_width=0
 
-#[cpuicon]
-#full_text=<span font_desc='FontAwesome'> </span>
-#color=#a1a1a1
-#interval=once
-#markup=pango
-#separator=false
-#separator_block_width=2
-#190 
-[cpu]
-#markup=pango
-#align=left
-#command=echo `cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/device/hwmon/hwmon0/temp1_input | cut -c 1-2` `echo '°C'`
-#command= sensors | grep '[0-9][0-9]\.[0-9]'
-#interval=10
-#separator=false
-#separator_block_width=6
 
