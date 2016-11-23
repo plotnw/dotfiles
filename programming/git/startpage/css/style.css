@@ -1,0 +1,37 @@
+body{
+  background-color:#222;
+  margin:20px auto;
+  text-align:center;
+}
+br{
+ line-height:0px;
+}
+.dot, .dotfilled, .blank{
+  position:relative;
+  width:20px;
+  height:20px;
+  margin:10px;
+
+  background-repeat:no-repeat;
+}
+
+span{
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:10px;
+}
+
+#digital{
+  font-family:Courier New,Courier,monospace;
+  font-size:30px;
+  font-weight: bold;
+  color: white;
+}
+
+#actual{
+  font-family:Courier New,Courier,monospace;
+  font-size:30px;
+  font-weight: bold;
+  color: #82FA58;
+}

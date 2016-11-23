@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Binary Clock</title>
+
+
+
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body{
+  background-color:#222;
+  margin:20px auto;
+  text-align:center;
+}
+br{
+ line-height:0px;
+}
+.dot, .dotfilled, .blank{
+  position:relative;
+  width:20px;
+  height:20px;
+  margin:10px;
+
+  background-repeat:no-repeat;
+}
+
+span{
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:10px;
+}
+
+#digital{
+  font-family:Courier New,Courier,monospace;
+  font-size:30px;
+  font-weight: bold;
+  color: white;
+}
+
+#actual{
+  font-family:Courier New,Courier,monospace;
+  font-size:30px;
+  font-weight: bold;
+  color: #82FA58;
+}
+
+    </style>
+
+
+        <script src="js/prefixfree.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div id="bincont"></div>
+<div id="digital"></div>
+<div id="actual"></div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+
+
+
+  </body>
+</html>
