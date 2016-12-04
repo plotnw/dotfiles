@@ -32,7 +32,7 @@ separator_block_width=0
 separator=false
 
 [battery]
-command=echo "<span color='#0033cc' bgcolor='#29897b'></span>$(sh /home/weznon/.config/i3/scripts/battery.sh )"
+command=echo "<span color='#0033cc' bgcolor='#29897b'></span>$(sh /home/weznon/.config/i3/scripts/isCharging.sh)$(sh /home/weznon/.config/i3/scripts/battery.sh )"
 interval=5
 separator=false
 separator_block_width=0
