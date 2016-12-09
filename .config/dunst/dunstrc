@@ -207,10 +207,12 @@
 # NOTE: if you don't want a notification to be displayed, set the format
 # to "".
 # NOTE: It might be helpful to run dunst -print in a terminal in order
-# to find fitting options for rules.
+# to find fitting options f rules.
 [skype]
-  appname = Electron
-  script= /home/weznon/.config/dunst/test.sh
+  appname = "Electron"
+  #format = ""
+  timeout = .01
+  script = /home/weznon/.config/dunst/idek.sh
 #[espeak]
 #    summary = "*"
 #    script = dunst_espeak.sh

@@ -218,4 +218,5 @@ exec amixer -D pulse sset Master 40%
 exec redshift
 exec syndaemon -i 2 -t -k
 exec xset -b
-exec dunst
+#exec dunst
+exec blueberry-tray
