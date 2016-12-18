@@ -24,9 +24,14 @@ command=~/.blocklets/$BLOCK_NAME
 separator_block_width=0
 separator=false
 markup=Pango
+[cap]
+command=echo "<span color='#29897b' bgcolor='#010000' background_alpha='1'></span>"
+interval=5
+separator=false
+separator_block_width=0
 
 [updates]
-command=echo "<span color='#29897b' bgcolor='#010000' background_alpha='1'></span>$(sh /home/weznon/.config/i3/scripts/updates.sh)"
+command=echo "$(sh /home/weznon/.config/i3/scripts/updates.sh)"
 interval=600
 separator_block_width=0
 separator=false
