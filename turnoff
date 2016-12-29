@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "appending uptime"
+echo $(uptime -p) >> /home/weznon/uptimelog
+echo "shutting down"
+sudo poweroff
+
