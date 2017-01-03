@@ -158,6 +158,7 @@ bar{
   i3bar_command i3bar -t
   status_command i3blocks
   position bottom
+
 	font pango:Hack 8
   tray_output none
   height 16
