@@ -40,4 +40,7 @@ eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
 eval "$(thefuck --alias FUCK)"
 panda
+alias clear='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo; echo' # Coloured
+seq 1 $(tput cols) | sort -R | spark | lolcat; echo;
+
 export PS1="$PS1"
