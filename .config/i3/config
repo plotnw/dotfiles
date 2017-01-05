@@ -187,7 +187,7 @@ bindsym XF86AudioPlay exec cmus-remote -u
 bindsym XF86AudioNext exec cmus-remote -n
 bindsym XF86AudioPrev exec cmus-remote -r
 bindsym $mod+Shift+a move scratchpad
-bindsym $mod+Shift+s [instance="^(?!ahfu$)"] scratchpad show
+bindsym $mod+Shift+s [instance="^(?=ahfu$)(?=ahfd$)(?=ahfr$)(?=ahfl$)"] scratchpad show
 
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -222,8 +222,26 @@ exec xset -b
 #exec dunst
 exec blueberry-tray
 
-#quake term
+#quake term up
 exec --no-startup-id termite --name ahfu
 for_window [instance="ahfu"] floating enable;
-for_window [instance="ahfu"] move scratchpad; [instance="ahfu"] scratchpad show; move position 320px 0px; resize set 1280px 540px; move scratchpad
+for_window [instance="ahfu"] move scratchpad; [instance="ahfu"] scratchpad show; move position 480px 0px; resize set 960px 535px; move scratchpad
 bindsym $mod+grave [instance="ahfu"] scratchpad show
+
+#quake term down
+exec --no-startup-id termite --name ahfd
+for_window [instance="ahfd"] floating enable;
+for_window [instance="ahfd"] move scratchpad; [instance="ahfd"] scratchpad show; move position 480px 545px; resize set 960px 535px; move scratchpad
+bindsym $mod+Shift+grave [instance="ahfd"] scratchpad show
+
+#quake term left
+exec --no-startup-id termite --name ahfl
+for_window [instance="ahfl"] floating enable;
+for_window [instance="ahfl"] move scratchpad; [instance="ahfl"] scratchpad show; move position 0px 0px; resize set 470px 1080px; move scratchpad
+bindsym Mod1+grave [instance="ahfl"] scratchpad show
+
+#quake term right
+exec --no-startup-id termite --name ahfr
+for_window [instance="ahfr"] floating enable;
+for_window [instance="ahfr"] move scratchpad; [instance="ahfr"] scratchpad show; move position 1450px 0px; resize set 470px 1080px; move scratchpad
+bindsym Shift+Mod1+grave [instance="ahfr"] scratchpad show
