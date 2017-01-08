@@ -3,10 +3,10 @@
 #
 
 # If not running interactively, don't do anything
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
@@ -35,12 +35,20 @@ eval $(dircolors ~/.dircolors)
   # get rid of artifacts
   #clear
 #fi
-PS1='\[\e[0;38m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
+#PS1='\[\e[0;38m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]λ\[\e[m\] \[\e[1;37m\]'
+#if [ "`id -u`" -eq 0 ]; then
+   #PS1="[ \[\e[1;31m\]λ\[\e[1;32m\]\[\e[49m\] \W \[\e[0m\]] "
+#else
+   #PS1="[ \[\e[1;32m\]λ \W \[\e[0m\]] "
+#fi
+PS1="\[\033[38;5;012m\][\[\033[01;32m\]\u \[\033[01;90m\]\[\033[38;5;4m\]\w\[\033[38;5;012m\]] \[\033[38;5;27m\]λ \[\033[0m\]"
+
+
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
 eval "$(thefuck --alias FUCK)"
 panda
-alias clear='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo; echo' # Coloured
+alias clear='clear; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo;' # Coloured
 seq 1 $(tput cols) | sort -R | spark | lolcat; echo;
-
+PROMPT_DIRTRIM=3
 export PS1="$PS1"
