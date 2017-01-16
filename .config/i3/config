@@ -187,7 +187,7 @@ bindsym XF86AudioPlay exec cmus-remote -u
 bindsym XF86AudioNext exec cmus-remote -n
 bindsym XF86AudioPrev exec cmus-remote -r
 bindsym $mod+Shift+a move scratchpad
-bindsym $mod+Shift+s [instance="^(?=ahfu$)(?=ahfd$)(?=ahfr$)(?=ahfl$)"] scratchpad show
+bindsym $mod+Shift+s [instance="^(?!.*(ahfl|ahfr|ahfd|ahfu)).*$"] scratchpad show
 
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
