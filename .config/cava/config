@@ -102,14 +102,14 @@
 
 # multiplier for the integral smoothing calculations. Takes values from 0 - 0.99.
 # Higher values means smoother, but less precise. 0 to disable.
-; integral = 0
+; integral = .5
 
 # disables or enables the so-called "Monstercat smoothing". Default: 1. Set to 0 to disable.
 ; monstercat = 1 
 
 # Set gravity multiplier for "drop off". Higher values means bars will drop faster. 
 # Accepts only non-negative values. 0.5 means half gravity, 2 means double. Set to 0 to disable "drop off".
-; gravity = 2
+; gravity = 1
 
 
 # In bar height, bars that would have been lower that this will not be drawn.
