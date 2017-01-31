@@ -43,6 +43,7 @@ eval $(dircolors ~/.dircolors)
 #fi
 PS1="\[\033[38;5;012m\][\[\033[01;32m\]\u \[\033[01;90m\]\[\033[38;5;4m\]\w\[\033[38;5;012m\]] \[\033[38;5;27m\]λ \[\033[0m\]"
 
+export EDITOR=vim
 
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
