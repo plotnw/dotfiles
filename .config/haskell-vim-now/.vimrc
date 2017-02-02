@@ -1,4 +1,3 @@
-hi Normal guibg=NONE ctermbg=NONE
 " HVN paths {{{
 " Set XDG_CONFIG_HOME/haskell-vim-now to load user's config files
 if exists($XDG_CONFIG_HOME)
@@ -110,6 +109,7 @@ Plug 'tpope/vim-commentary'
 Plug 'godlygeek/tabular'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'easymotion/vim-easymotion'
+Plug 'ConradIrwin/vim-bracketed-paste'
 
 " Allow pane movement to jump out of vim into tmux
 Plug 'christoomey/vim-tmux-navigator'
