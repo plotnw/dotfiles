@@ -214,7 +214,7 @@ set mouse=a
 " Colors and Fonts {{{
 
 try
-  colorscheme wombat256mod
+  colorscheme mine
 catch
 endtry
 
