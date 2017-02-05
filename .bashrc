@@ -50,7 +50,7 @@ eval "$(thefuck --alias)"
 eval "$(thefuck --alias FUCK)"
 panda
 alias clear='clear; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo;' # Coloured
-
+alias fixBrackets='bash /home/weznon/programming/git/scripts/fixLoneBrackets'
 alias reset='cd /home/weznon; clear'
 seq 1 $(tput cols) | sort -R | spark | lolcat; echo;
 PROMPT_DIRTRIM=3
