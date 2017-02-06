@@ -52,6 +52,7 @@ panda
 alias clear='clear; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo;' # Coloured
 alias fixBrackets='bash /home/weznon/programming/git/scripts/fixLoneBrackets'
 alias reset='cd /home/weznon; clear'
+alias cswitch='cd /mnt/c/Users/plotnw/OneDrive/documents/Programs/Git'
 seq 1 $(tput cols) | sort -R | spark | lolcat; echo;
 PROMPT_DIRTRIM=3
 export PS1="$PS1"
