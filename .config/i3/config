@@ -227,7 +227,7 @@ exec blueberry-tray
 exec --no-startup-id termite --name ahfu
 for_window [instance="ahfu"] floating enable;
 for_window [instance="ahfu"] move scratchpad; [instance="ahfu"] scratchpad show; move position 480px 10px; resize set 960px 515px; move scratchpad
-bindsym $mod+Escape [instance="ahfu"] scratchpad show
+bindsym $mod+grave [instance="ahfu"] scratchpad show
 
 #quake term down
 exec --no-startup-id termite --name ahfd
@@ -239,7 +239,7 @@ bindsym $mod+Shift+grave [instance="ahfd"] scratchpad show
 exec --no-startup-id termite --name ahfl
 for_window [instance="ahfl"] floating enable;
 for_window [instance="ahfl"] move scratchpad; [instance="ahfl"] scratchpad show; move position 10px 10px; resize set 460px 1045px; move scratchpad
-bindsym Mod1+Escape [instance="ahfl"] scratchpad show
+bindsym Mod1+grave [instance="ahfl"] scratchpad show
 
 #quake term right
 exec --no-startup-id termite --name ahfr
