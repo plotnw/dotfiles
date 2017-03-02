@@ -2,6 +2,7 @@ dotfiels
 
 cannot garuntee they will work on your computer
 
+moved to https://gitlab.com/weznon/dotfiles
 
 have funA
 
